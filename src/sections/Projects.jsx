@@ -3,9 +3,9 @@ import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 
 const projects = [
     {
-        title: "Simple Ball Game",
+        title: "2D Billiard Game",
         description:
-            "A simple ball game using python",
+            "This project is a 2D billiard-style game developed using Python and Pygame. It simulates basic billiard physics by implementing collision detection between balls and boundaries, as well as angle-based ball reflection. The game includes custom rules where the player loses after pocketing the cue ball three times, emphasizing game logic, physics calculation, and game loop implementation.",
         image: "/projects/ballgame.png",
         tags: ["Python", "pygame"],
         link: "#",
@@ -14,7 +14,7 @@ const projects = [
     {
         title: "WordIn",
         description:
-            "An Indonesian Wordle game made with android studio",
+            "WordIn is an Indonesian Wordle-style mobile game developed for Android using Kotlin and Jetpack Compose.The application features a declarative user interface and implements word validation logic, attempt limitations, and real-time UI updates. This project focuses on mobile UI development, state management, and applying modern Android development practices.",
         image: "/projects/Wordin.jpeg",
         tags: ["Android Studio", "Jetpack Compose", "Kotlin"],
         link: "#",
@@ -23,7 +23,7 @@ const projects = [
     {
         title: "TaxFlow",
         description:
-            "A Simple Tax Management Web",
+            "Tax Flow is a simple fullstack web application designed to manage basic tax-related data. The backend is built using Laravel and MySQL to handle data processing and CRUD operations, while the frontend uses HTML, Tailwind CSS, and JavaScript for a responsive user interface. This project demonstrates fundamental fullstack development concepts, including database interaction and basic authentication.",
         image: "/projects/Home-TaxFlow.png",
         tags: ["Laravel", "React", "MySQL", "Tailwind"],
         link: "#",
@@ -81,6 +81,8 @@ export const Projects = () => {
                                             {project.link && project.link !== "#" && (
                                                 <a
                                                     href={project.link}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
                                                     className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
                                                 >
                                                     <ArrowUpRight className="w-5 h-5" />
@@ -89,6 +91,8 @@ export const Projects = () => {
                                             {project.github && project.github !== "#" && (
                                                 <a
                                                     href={project.github}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
                                                     className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
                                                 >
                                                     <Github className="w-5 h-5" />

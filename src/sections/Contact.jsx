@@ -14,11 +14,13 @@ const contactInfo = [
         icon: Mail,
         label: "Email",
         value: "mtedo2017@gmail.com",
+        href: "mailto:mtedo2017@gmail.com",
     },
     {
         icon: Phone,
         label: "Whatsapp",
         value: "+62 812-9269-3389",
+        href: "https://wa.me/6281292693389",
     },
 ];
 
@@ -105,6 +107,8 @@ export const Contact = () => {
                                     <a
                                         key={i}
                                         href={item.href}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                         className="flex items-center gap-4 p-4 rounded-xl hover:bg-surface transition-colors group"
                                     >
                                         <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">

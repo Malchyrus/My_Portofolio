@@ -77,10 +77,10 @@ export const Hero = () => {
 
                         {/* CTAs */}
                         <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-                            <Button size="lg">
+                            <Button size="lg" href="https://wa.me/6281292693389">
                                 Contact Me <ArrowRight className="w-5 h-5" />
                             </Button>
-                            <AnimatedBorderButton>
+                            <AnimatedBorderButton href="https://drive.google.com/uc?export=download&id=1H0-rp7_VhTouuEWLzhOoA0vI2MWc7UYR">
                                 <Download className="w-5 h-5" />
                                 Download CV
                             </AnimatedBorderButton>
@@ -96,6 +96,8 @@ export const Hero = () => {
                                 <a
                                     key={idx}
                                     href={social.href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
                                 >
                                     {<social.icon className="w-5 h-5" />}
