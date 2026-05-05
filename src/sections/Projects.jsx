@@ -1,5 +1,6 @@
 import { ArrowUpRight, Github } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
+import Shuffle from "../components/shuffle";
 
 const projects = [
     {
@@ -41,13 +42,30 @@ export const Projects = () => {
 
                 <div className="text-center mx-auto max-w-3xl mb-16">
 
-                    <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">
+                    {/* <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">
                         My
                         <span className="font-serif italic font-normal text-white">
                             {" "}
                             Projects
                         </span>
-                    </h2>
+                    </h2> */}
+
+                    <Shuffle className="text-4xl md:text-5xl font-bold mt-4 mb-6 text-secondary-foreground"
+                    text="My Projects"
+                    shuffleDirection="right"
+                    duration={0.35}
+                    animationMode="evenodd"
+                    shuffleTimes={1}
+                    ease="power3.out"
+                    stagger={0.03}
+                    threshold={0.1}
+                    triggerOnce={true}
+                    triggerOnHover
+                    respectReducedMotion={true}
+                    loop={false}
+                    loopDelay={0}
+                    />
+
                     <p className="text-muted-foreground animate-fade-in animation-delay-200">
                         Some are work i made together with my friends
                     </p>

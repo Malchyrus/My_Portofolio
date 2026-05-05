@@ -1,10 +1,8 @@
 import { Button } from "@/components/Button";
 import {
     ArrowRight,
-    ChevronDown,
     Github,
     Linkedin,
-    Twitter,
     Download,
 } from "lucide-react";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
@@ -67,7 +65,7 @@ export const Hero = () => {
 
                         <div className="space-y-4">
                             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
-                                A computer science student exploring ideas through code.
+                                A CompSci student exploring ideas through code.
                             </h1>
                             <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
                                 Hi, I'm Muhamad Rafli Andrea Bastedo - a Computer Science Student specializing in
