@@ -4,6 +4,15 @@ import Shuffle from "../components/shuffle";
 
 const projects = [
     {
+        title: "MovieMine",
+        description:
+            "MovieMine is a full-stack movie discovery and management application. The frontend provides an intuitive interface for browsing, searching, and managing movies, built with modern web technologies. The backend handles data processing, user authentication, and API integrations. This project demonstrates comprehensive fullstack development with responsive design, state management, and RESTful API architecture.",
+        image: "/projects/MovieMine.png",
+        tags: ["React", "Node.js", "MongoDB", "Tailwind"],
+        link: "https://moviemine-blue.vercel.app/",
+        github: "https://github.com/Malchyrus/moviemine",
+    },
+    {
         title: "2D Billiard Game",
         description:
             "This project is a 2D billiard-style game developed using Python and Pygame. It simulates basic billiard physics by implementing collision detection between balls and boundaries, as well as angle-based ball reflection. The game includes custom rules where the player loses after pocketing the cue ball three times, emphasizing game logic, physics calculation, and game loop implementation.",
