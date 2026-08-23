@@ -6,7 +6,7 @@ const projects = [
     {
         title: "MovieMine",
         description:
-            "MovieMine is a full-stack movie discovery and management application. The frontend provides an intuitive interface for browsing, searching, and managing movies, built with modern web technologies. The backend handles data processing, user authentication, and API integrations. This project demonstrates comprehensive fullstack development with responsive design, state management, and RESTful API architecture.",
+            "MovieMine is a full-stack movie discovery and management application. The frontend provides an intuitive interface for browsing, searching, and managing movies, built with modern web technologies. The backend handles data processing, user authentication, and API integrations.",
         image: "/projects/MovieMine.png",
         tags: ["React", "Node.js", "MongoDB", "Tailwind"],
         link: "https://moviemine-blue.vercel.app/",
